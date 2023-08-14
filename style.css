@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #1f242d;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #1f242ddf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    animation: slideRight 1s ease forwards;
+}
+
+nav a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 450;
+    transition: 1s;
+    animation: slideRight 1s ease backwards;
+}
+
+nav a:hover , .home-nav{
+    color: aqua;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.img img {
+    max-width: 470px;
+}
+
+.multi-text {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f242d;
+    border-left: 2px solid aqua;
+    position: absolute;
+    animation: text 4s steps(12) infinite;
+}
+
+.content {
+    max-width: 730px;
+}
+
+.content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    animation: slideBottom 1s ease backwards;
+}
+
+.content h3:nth-of-type(2) {
+    margin-bottom: 35px;
+}
+
+.content p {
+    font-size: 16px;
+    animation: slideLeft 1s ease forwards;
+}
+
+.content h1 {
+    font-size: 56px;
+    font: 700;
+    margin: -3px 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+span {
+    color: aqua;
+}
+
+.icons a{
+    align-items: center;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid;
+    border-color: aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none; 
+    margin: 30px 15px 30px 0;
+    transition: 0.5s ease;
+    padding: 9px 9px 9px 9px;
+    animation: slideLeft 1s ease forwards;
+}
+
+.icons a:hover {
+    background: aqua;
+    color: #1f242d;
+    box-shadow:aqua;
+}
+
+.about {
+    padding: 80px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col_1 {
+    flex-basis: 35%;
+    margin-left: 30px;
+}
+
+.col_1 img{
+    display: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col_2 {
+    margin-right: 30px;
+    flex-basis: 60%;
+}
+
+.col_2 h1 {
+    color: aqua;
+    font-weight: 600;
+    font-size: 60px;
+    transition: 0.8s;
+    animation: slideBottom 1s ease backwards;
+}
+
+.know-more {
+    position: static;
+    border-radius: 20px;
+    background-color: aqua;
+    padding: 10px 12px;
+    color: black;
+    box-shadow: 0 0 0 5px black;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.know-more:hover {
+    background-color: rgb(23, 196, 196);
+}
+
+
+
+/* SKILLS-------------------------- */
+.skills {
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+}
+
+.skills-heading {
+    width: 100%;
+    margin-bottom: 70px;
+    display: grid;
+    align-items: center;
+    place-items: center;
+}
+
+.skills-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
+}
+
+.skill-bar .info{
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.skill-bar .bar{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #121517;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+.percent {
+    font-weight: bold;
+}
+
+.skill-bar .bar span{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-radius: 25px;
+    background-color: aqua;
+}
+
+.skill-bar .bar .html {
+    width: 95%;
+    animation: html 3s;
+}
+
+.skill-bar .bar .css {
+    width: 75%;
+    animation: css 3s;
+}
+
+.skill-bar .bar .js {
+    width: 70%;
+    animation: javascript 3s;
+}
+
+.skill-bar .bar .python {
+    width: 90%;
+    animation: python 3s;
+}
+
+.skill-bar .bar .figma {
+    width: 80%;
+    animation: figma 3s;
+}
+
+.skill-bar .bar .blender {
+    width: 65%;
+    animation: blender 3s;
+}
+
+/* portfolio section------------------ */
+
+.portfolio-section h1{
+    padding-bottom: 30px;
+}
+
+.portfolio-section {
+    text-align: center;
+}
+
+.portfolio-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box1 img{
+    max-width: 55%;
+}
+
+.box2 img{
+    max-width: 55%;
+}
+
+.box3 img{
+    max-width: 55%;
+}
+
+/* -------------------contact-section--------------------------- */
+
+.contact-section {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+#contact input[type="text"],
+#contact input[type="tel"],
+#contact input[type="email"],
+#contact textarea,
+#contact input[type="url"],
+#contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+  
+#contact {
+    background: #1f242d;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+  
+#contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+  
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}
+  
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+  
+#contact input[type="email"],
+#contact input[type="text"],
+#contact input[type="url"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+  
+  :-moz-placeholder {
+    color: #888;
+  }
+  
+  ::-moz-placeholder {
+    color: #888;
+  }
+  
+  :-ms-input-placeholder {
+    color: #888;
+  }
+
+footer {
+    text-align: center;
+    background-color: #000;
+}
+
+/* KEYFRAME ANIMATION */
+@keyframes slideRight {
+    0% {
+        transform: TranslateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: TranslateX(0%);
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: TranslateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: TranslateX(0%);
+    }
+}
+
+
+
+/* Animation Keyframes */
+@keyframes slideLeft {
+    0% {
+        transform: TranslateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: TranslateX(0%);
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes figma {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes blender {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+
+
+
+
+
